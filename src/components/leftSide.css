@@ -1,0 +1,21 @@
+.left{
+    height: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.ss{
+    height: 30rem;
+    /* width: 100%; */
+    width: 25rem;
+    resize: none;
+    outline: none;
+    overflow-x: hidden;
+    font-family: "Space Mono", monospace;
+    font-size: 0.95em;
+    color: #4A4A4A;
+    border: 0;
+    padding: 10px;
+    box-shadow: 10px 10px #646464;
+    background-color: #FFDD67;
+}

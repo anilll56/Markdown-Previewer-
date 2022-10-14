@@ -1,18 +1,34 @@
+body{
+  background-color: #FFCD38;
+  font-family: "Space Mono", monospace;
+  color: #4A4A4A;
+}
+.br{
+  display: flex;
+}
+.hh{
+  width: 40%;
+}
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.header{
+  width: 60%;
+    display: flex;
+    justify-content: space-between;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.buttoncss{
+  align-self: flex-end;
+    width: 40px;
+    height: 40px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 10px 10px #646464;
+    background-color: #ffeeb4;
+    cursor: pointer;
+    transition: box-shadow 0.2s ease-out;
+    background-color: #FFDD67;
 }
-
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -23,16 +39,45 @@
   font-size: calc(10px + 2vmin);
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+.bigContent{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pages{
+  width: 80%
+}
+.gg-inbox {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 18px;
+  height: 18px;
+  border: 2px solid;
+  box-shadow: inset 0 -2px 0 0;
+  border-radius: 3px;
+  height: 100%;
+  width: 100%;
+  background-color: #FFDD67;
+}
+.gg-inbox::after,
+.gg-inbox::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  background: currentColor;
+  height: 7px;
+  width: 7px;
+  border-radius: 2px;
+  bottom: -2px
+}
+.gg-inbox::before {
+  left: -2px
+}
+.gg-inbox::after {
+  right: -2px
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
